@@ -66,12 +66,12 @@ SecureScanHub/
 
 | Method | Endpoint              | Auth Required | Description              |
 |--------|-----------------------|---------------|--------------------------|
-| POST   | `/auth/register`      | ❌            | Register new user         |
-| POST   | `/auth/login`         | ❌            | Login, receive JWT token  |
-| POST   | `/scan/malware`       | ✅ JWT        | Scan text for malware     |
-| POST   | `/scan/malware/file`  | ✅ JWT        | Upload file for scanning  |
-| POST   | `/scan/crawler`       | ✅ JWT        | Crawl URL with threads    |
-| GET    | `/scan/history`       | ✅ JWT        | Fetch user scan history   |
+| POST   | `/auth/register`      |  NULL         | Register new user         |
+| POST   | `/auth/login`         |  NULL         | Login, receive JWT token  |
+| POST   | `/scan/malware`       |  JWT          | Scan text for malware     |
+| POST   | `/scan/malware/file`  |  JWT          | Upload file for scanning  |
+| POST   | `/scan/crawler`       |  JWT          | Crawl URL with threads    |
+| GET    | `/scan/history`       |   JWT         | Fetch user scan history   |
 
 ---
 
